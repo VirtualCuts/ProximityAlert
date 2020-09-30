@@ -385,14 +385,6 @@ namespace Proximity
                         Graphics.DrawImage("Direction-Arrow.png", rectDirection, rectUV, structValue.Color);
                         match = true;
                     }
-                    // Rogue Exiles
-                    if (ePath.StartsWith("Metadata/Monsters/Exiles/Exile"))
-                    {
-                        lineText = "Rogue Exile";
-                        lineColor = new Color(254, 192, 118);
-                        match = true;
-                        lines++;
-                    }
                     // Contains Check
                     if (!match)
                         foreach (var filterEntry in PathDict.Where(x => ePath.Contains(x.Key)).Take(1))
